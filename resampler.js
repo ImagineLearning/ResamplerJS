@@ -100,7 +100,7 @@ class Resampler {
 		return outputOffset;
 	}
 
-	multiTap() {
+	multiTap(bufferLength) {
 		let outputOffset = 0;
 		if (bufferLength > 0) {
 			const buffer = this.inputBuffer;
