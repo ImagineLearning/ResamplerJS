@@ -1,8 +1,8 @@
 {
   "name": "xaudiojs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A minimal cross-browser API for writing PCM audio samples.",
-  "main": "XAudioServer.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"No tests\""
   },
