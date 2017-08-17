@@ -1,0 +1,19 @@
+{
+  "name": "xaudiojs",
+  "version": "1.0.0",
+  "description": "A minimal cross-browser API for writing PCM audio samples.",
+  "main": "XAudioServer.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImagineLearning/XAudioJS.git"
+  },
+  "author": "Grant Galitz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImagineLearning/XAudioJS/issues"
+  },
+  "homepage": "https://github.com/ImagineLearning/XAudioJS#readme"
+}
