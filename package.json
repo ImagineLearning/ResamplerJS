@@ -1,19 +1,35 @@
 {
-  "name": "xaudiojs",
-  "version": "1.0.2",
+  "name": "resamplerjs",
+  "version": "0.1.0",
   "description": "A minimal cross-browser API for writing PCM audio samples.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"No tests\""
+    "build": "npm run build:lib && npm run build:browserify",
+    "build:browserify": "browserify lib/index.js -t babelify --outfile dist/resampler.js -s Resampler",
+    "build:lib": "babel src/ -d lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ImagineLearning/XAudioJS.git"
+    "url": "git+https://github.com/ImagineLearning/ResamplerJS.git"
   },
   "author": "Grant Galitz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ImagineLearning/XAudioJS/issues"
+    "url": "https://github.com/ImagineLearning/ResamplerJS/issues"
   },
-  "homepage": "https://github.com/ImagineLearning/XAudioJS#readme"
+  "homepage": "https://github.com/ImagineLearning/ResamplerJS#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  }
 }

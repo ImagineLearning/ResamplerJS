@@ -1,3 +1,3 @@
 import Resampler from './resampler';
 
-export { Resampler };
+export default Resampler;
