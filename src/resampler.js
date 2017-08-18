@@ -128,7 +128,7 @@ class Resampler {
 				while (weight > 0 && actualPosition < bufferLength) {
 					amountToNext = 1 + actualPosition - currentPosition;
 					if (weight >= amountToNext) {
-						for (channel = 0; channel < this.channels; ++channel) {
+						for (let channel = 0; channel < this.channels; ++channel) {
 							output[channel] += buffer[actualPosition++] * amountToNext;
 						}
 						currentPosition = actualPosition;
